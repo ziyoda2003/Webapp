@@ -4,7 +4,7 @@ import plotly.express as px
 from PIL import Image
 import numpy as np
 import pathlib
-#uzgarish
+#uzgarish 2
 # Streamlit sarlavhasi
 st.title('Rasmlarni klassifikatsiya qiluvchi model')
 st.write("Klasslar: Car Airplane Boat Toy(O'yinchoq) Container Beetle(Hashoratlar) Helmet(Kaska) Footwear(oyoqkiyim) Hat(shlyapa) Dairy(sut)")
