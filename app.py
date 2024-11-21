@@ -7,9 +7,9 @@ import pathlib
 #uzgarish
 # Streamlit sarlavhasi
 st.title('Rasmlarni klassifikatsiya qiluvchi model')
-st.write("Klassar : Car Airplane Boat Bird Flower Tree Vegetable Fruit Person Cosmetics")
+st.write("Klasslar: Car Airplane Boat Toy Container Beetle Helmet Footwear Hat Dairy")
 # Fayl yo‘lini aniqlash
-model_path = pathlib.Path('transport_model.pkl')
+model_path = pathlib.Path('modelziyoda.pkl')
 
 # Rasm yuklash
 files = st.file_uploader("Rasm yuklash", type=["avif", "png", "jpeg", "gif", "svg", "jfif"])
