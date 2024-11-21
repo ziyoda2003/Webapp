@@ -7,7 +7,7 @@ import pathlib
 #uzgarish 2
 # Streamlit sarlavhasi
 st.title('Rasmlarni klassifikatsiya qiluvchi model')
-st.write("Klasslar: Car Airplane Boat Toy(O'yinchoq) Container Beetle(Hashoratlar) Helmet(Kaska) Footwear(oyoqkiyim) Hat(shlyapa) Dairy(sut)")
+st.write("Klasslar: Car Airplane Boat Toy(O'yinchoq)  Beetle(Hashoratlar) Helmet(Kaska) Footwear(oyoqkiyim) Hat(shlyapa) Dairy(sut)")
 # Fayl yo‘lini aniqlash
 model_path = pathlib.Path('modelziyoda.pkl')
 
