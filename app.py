@@ -7,7 +7,7 @@ import pathlib
 #uzgarish
 # Streamlit sarlavhasi
 st.title('Rasmlarni klassifikatsiya qiluvchi model')
-st.write("Klasslar: Car Airplane Boat Toy Container Beetle Helmet Footwear Hat Dairy")
+st.write("Klasslar: Car Airplane Boat Toy(O'yinchoq) Container Beetle(Hashoratlar) Helmet(Kaska) Footwear(oyoqkiyim) Hat(shlyapa) Dairy(sut)")
 # Fayl yo‘lini aniqlash
 model_path = pathlib.Path('modelziyoda.pkl')
 
@@ -51,31 +51,3 @@ if files:
             except Exception as e:
                 st.error(f"Bashoratda xatolik: {e}")
 
-
-# import streamlit as st
-# from fastai.vision.all import *
-# import plotly.express as px
-# import pathlib
-# pathlib.PosixPath = pathlib.Path
-
-# # title
-# st.title('Transportni klassifikatsiya qiluvchi model')
-
-# # Rasmni joylash
-# files = st.file_uploader("Rasm yuklash", type=["avif", "png", "jpeg", "gif", "svg"])
-# if files:
-#     st.image(files)  # rasmni chiqarish
-#     # PIL convert
-#     img = PILImage.create(files)
-    
-#     # Modelni yuklash
-#     model = load_learner('transport_model.pkl')
-
-#     # Bashorat qiymatni topamiz
-#     pred, pred_id, probs = model.predict(img)
-#     st.success(f"Bashorat: {pred}")
-#     st.info(f"Ehtimollik: {probs[pred_id] * 100:.1f}%")
-
-#     # Plotting
-#     fig = px.bar(x=probs * 100, y=model.dls.vocab)
-#     st.plotly_chart(fig)
